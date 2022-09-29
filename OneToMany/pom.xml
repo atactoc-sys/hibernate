@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.anudip</groupId>
-  <artifactId>OneToManyEmployee</artifactId>
+  <artifactId>OneToMany</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>OneToManyEmployee</name>
+  <name>OneToMany</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -17,14 +17,6 @@
   </properties>
 
   <dependencies>
-
-      <dependency>
-          <groupId>mysql</groupId>
-          <artifactId>mysql-connector-java</artifactId>
-          <version>8.0.30</version>
-      </dependency>
-
-
     <dependency>
     <groupId>org.hibernate</groupId>
     <artifactId>hibernate-core</artifactId>
@@ -69,5 +61,11 @@
 </dependency>
 
 
+
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.30</version>
+</dependency>
   </dependencies>
 </project>

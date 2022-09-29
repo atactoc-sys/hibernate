@@ -19,23 +19,21 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-@Table
 @Entity
-@Data
 public class Citizen 
 {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int cId;
-	@Column(length = 15, nullable = false)
+	@Column(length = 15)
 	private String cname;
-	@Column(length = 15, nullable = false)
+	@Column(length = 15)
 	private String surname;
 	@Column(length = 12, nullable = false, unique = true)
 	private long phone;
 	@Column(length = 30, nullable = false, unique = true)
 	private String email;
-	@Column(length = 20, nullable = false)
+	@Column(length = 20)
 	private String dob;
 	
 	@OneToOne(targetEntity = Address.class, cascade = CascadeType.ALL)

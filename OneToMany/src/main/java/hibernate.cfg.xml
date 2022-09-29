@@ -9,7 +9,7 @@
 <property name="connection.password">root</property>
 <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
 <property name="show_sql">true</property>
-<mapping class="com.anudip.OneToManyEmployee.entity.Citizen" />
-<mapping class="com.anudip.OneToManyEmployee.entity.Address" />
+<mapping class="com.onetomanyex.emtity.Depertment" />
+<mapping class="com.onetomanyex.emtity.Employee" />
 </session-factory>
 </hibernate-configuration>

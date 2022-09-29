@@ -15,22 +15,20 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Table
-
 @Entity
 public class Address 
 {
 	@Id
 	private long idNumber;
-	@Column(length = 10, nullable = false)
+	@Column(length = 10)
 	private String idType;
-	@Column(length = 50, nullable = false)
+	@Column(length = 50)
 	private String address;
-	@Column(length = 20, nullable = false)
+	@Column(length = 20)
 	private String city;
-	@Column(length = 20, nullable = false)
+	@Column(length = 20)
 	private String state;
-	@Column(length = 6, nullable = false)
+	@Column(length = 6)
 	private long pincode;
 	
 	@OneToOne(targetEntity = Citizen.class)
